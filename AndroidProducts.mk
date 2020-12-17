@@ -14,10 +14,16 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vince.mk
+    $(LOCAL_DIR)/dot_vince.mk
 
 COMMON_LUNCH_CHOICES := \
+<<<<<<< HEAD
     aosp_vince-user \
     aosp_vince-userdebug \
     aosp_vince-eng
 
+=======
+    dot_vince-user \
+    dot_vince-userdebug \
+    dot_vince-eng
+>>>>>>> 886f5ff... vince: Bringup DotOS
