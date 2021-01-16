@@ -1,0 +1,2 @@
+allow radio hal_datafactory_hwservice:hwservice_manager { find };
+allow radio qcom_ims_prop:file { read };
