@@ -247,3 +247,53 @@ wifi.interface=wlan0
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.debug.wfd.enable=1 \
 persist.sys.wfd.virtual=0
+
+# Dirac algo tsx 9/12
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.storeSettings=1 \
+    persist.dirac.acs.ignore_error=1
+
+# Dirac headset effect
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.audio.soundfx.dirac=true \
+    persist.audio.dirac.speaker=true
+
+# Graphics/Gaming
+persist.sys.NV_POWERMODE=1
+persist.sys.NV_PROFVER=15
+persist.sys.NV_STEREOCTRL=0
+persist.sys.NV_STEREOSEPCHG=0
+persist.sys.NV_STEREOSEP=30
+persist.sys.NV_FPSLIMIT=60
+persist.sys.use_dithering=0
+debug.performance.tuning=1
+debug.gr.numframebuffers=3
+persist.sys.ui.hw=1
+ro.fb.mode=1
+dev.pm.dyn_samplingrate=1
+persist.sys.composition.type=gpu
+ro.config.enable.hw_accel=true
+
+# Misc
+ro.sf.compbypass.enable=0
+profiler.force_disable_ulog=true
+profiler.force_disable_ulog=1
+profiler.force_disable_err_rpt=true
+profiler.force_disable_err_rpt=1
+ro.config.nocheckin=1
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+dalvik.vm.checkjni=false
+profiler.debugmonitor=false
+profiler.launch=false
+profiler.hung.dumpdobugreport=false
+
+# Fast Reboot
+ro.config.hw_quickpoweron=true
+
+# Battery
+pm.sleep_mode=1
+ro.ril.power_collapse=1
+ro.ril.fast.dormancy.rule=0
+persist.sys.shutdown.mode=hibernate
